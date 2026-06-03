@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "raw_rows": 13715,
+    "rows_with_issues": 2583,
+    "cleaned_rows": 13436,
+    "rows_removed": 279,
+    "rows_recovered_in_place": 456,
+    "retention_pct": 0.9797,
+    "flagged_incomplete": 801,
+    "flagged_late": 1199
+  },
+  "steps": [
+    {
+      "issue": "sku_typo",
+      "label": "SKU typos \u2014 casing / O-vs-0 / l-vs-1",
+      "teaches": "normalization",
+      "detected": 394,
+      "action": "recovered",
+      "rows_dropped": 0,
+      "resolution": "Standardized to canonical SKU (uppercase; O\u21920, I/L\u21921). Rows retained.",
+      "unrecovered": 0
+    },
+    {
+      "issue": "duplicate_id",
+      "label": "Duplicate shipment lines",
+      "teaches": "de-duplication",
+      "detected": 203,
+      "action": "removed",
+      "rows_dropped": 203,
+      "resolution": "Dropped exact duplicate (shipment_id, SKU) lines; kept first occurrence."
+    },
+    {
+      "issue": "phantom_store",
+      "label": "Phantom shipments \u2014 unknown store",
+      "teaches": "referential integrity",
+      "detected": 12,
+      "action": "removed",
+      "rows_dropped": 12,
+      "resolution": "Dropped \u2014 store_id absent from the store master."
+    },
+    {
+      "issue": "negative_qty",
+      "label": "Negative quantities",
+      "teaches": "glitch handling",
+      "detected": 62,
+      "action": "recovered",
+      "rows_dropped": 0,
+      "resolution": "Sign error corrected to absolute value. Rows retained."
+    },
+    {
+      "issue": "null_qty",
+      "label": "Missing received quantity",
+      "teaches": "glitch handling",
+      "detected": 64,
+      "action": "removed",
+      "rows_dropped": 64,
+      "resolution": "Dropped \u2014 received quantity missing and cannot be honestly imputed."
+    },
+    {
+      "issue": "incomplete_load",
+      "label": "Incomplete loads \u2014 under-delivery",
+      "teaches": "exception investigation",
+      "detected": 801,
+      "action": "flagged",
+      "rows_dropped": 0,
+      "resolution": "Flagged is_incomplete=True for follow-up. Rows retained."
+    },
+    {
+      "issue": "late_delivery",
+      "label": "Late deliveries",
+      "teaches": "shipment follow-up",
+      "detected": 1199,
+      "action": "flagged",
+      "rows_dropped": 0,
+      "resolution": "Flagged is_late=True for follow-up. Rows retained."
+    }
+  ],
+  "validation": {
+    "sku_typo": {
+      "injected": 394,
+      "detected": 394,
+      "match": true
+    },
+    "duplicate_id": {
+      "injected": 203,
+      "detected": 203,
+      "match": true
+    },
+    "phantom_store": {
+      "injected": 12,
+      "detected": 12,
+      "match": true
+    },
+    "negative_null_qty": {
+      "injected": 129,
+      "detected": 129,
+      "match": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# NOTE: the generated data IS committed on purpose (reproducible by inspection,
+# fixed seed 42). Do NOT ignore data-pipeline/output/** (parquet + JSON).

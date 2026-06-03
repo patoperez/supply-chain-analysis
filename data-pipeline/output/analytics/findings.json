@@ -1,0 +1,114 @@
+{
+  "pareto_by_cedis": [
+    {
+      "cd_id": "CD-MX",
+      "name": "CEDIS Central",
+      "city": "Mexico City",
+      "lost_sales_mxn": 375417.8,
+      "share": 0.2447,
+      "cumulative_share": 0.2447
+    },
+    {
+      "cd_id": "CD-GDL",
+      "name": "CEDIS Occidente",
+      "city": "Guadalajara",
+      "lost_sales_mxn": 311790.4,
+      "share": 0.2032,
+      "cumulative_share": 0.4478
+    },
+    {
+      "cd_id": "CD-MTY",
+      "name": "CEDIS Norte",
+      "city": "Monterrey",
+      "lost_sales_mxn": 264454.2,
+      "share": 0.1723,
+      "cumulative_share": 0.6202
+    },
+    {
+      "cd_id": "CD-PUE",
+      "name": "CEDIS Puebla",
+      "city": "Puebla",
+      "lost_sales_mxn": 238909.5,
+      "share": 0.1557,
+      "cumulative_share": 0.7759
+    },
+    {
+      "cd_id": "CD-MER",
+      "name": "CEDIS Sureste",
+      "city": "Merida",
+      "lost_sales_mxn": 176815.8,
+      "share": 0.1152,
+      "cumulative_share": 0.8911
+    },
+    {
+      "cd_id": "CD-TIJ",
+      "name": "CEDIS Noroeste",
+      "city": "Tijuana",
+      "lost_sales_mxn": 167103.8,
+      "share": 0.1089,
+      "cumulative_share": 1.0
+    }
+  ],
+  "late_by_weekday": [
+    {
+      "weekday": "Monday",
+      "shipments": 2062,
+      "late": 156,
+      "late_rate": 0.0757
+    },
+    {
+      "weekday": "Tuesday",
+      "shipments": 1833,
+      "late": 113,
+      "late_rate": 0.0616
+    },
+    {
+      "weekday": "Wednesday",
+      "shipments": 2118,
+      "late": 148,
+      "late_rate": 0.0699
+    },
+    {
+      "weekday": "Thursday",
+      "shipments": 1735,
+      "late": 175,
+      "late_rate": 0.1009
+    },
+    {
+      "weekday": "Friday",
+      "shipments": 1940,
+      "late": 240,
+      "late_rate": 0.1237
+    },
+    {
+      "weekday": "Saturday",
+      "shipments": 1822,
+      "late": 200,
+      "late_rate": 0.1098
+    },
+    {
+      "weekday": "Sunday",
+      "shipments": 1926,
+      "late": 167,
+      "late_rate": 0.0867
+    }
+  ],
+  "mape_by_category": [
+    {
+      "category": "Snacks",
+      "mape": 0.1984
+    },
+    {
+      "category": "Beverages",
+      "mape": 0.1983
+    },
+    {
+      "category": "Cookies",
+      "mape": 0.1775
+    },
+    {
+      "category": "Cereals",
+      "mape": 0.177
+    }
+  ]
+}

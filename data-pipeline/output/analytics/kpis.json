@@ -1,0 +1,14 @@
+{
+  "fill_rate": 0.9823,
+  "on_time_delivery": 0.9108,
+  "stockout_events": 441,
+  "stockout_rate": 0.0408,
+  "unmet_units_total": 74758,
+  "lost_sales_mxn": 1534491.5,
+  "lost_sales_is_estimate": true,
+  "mape": 0.1886,
+  "shipment_lines": 13436,
+  "late_lines": 1199,
+  "incomplete_lines": 801,
+  "inventory_rows": 10800
+}
