@@ -4,7 +4,7 @@ End-to-end analysis of a distribution network's service failures: **where sales 
 lost to stock-outs, why, and how to see the next one coming.** Built on a realistically
 defective dataset and fully reproducible from a fixed seed.
 
-**🔗 Live interactive case study:** https://supply-chain-control-tower.pages.dev
+**🔗 Live interactive case study:** https://perezfajardo.com/supply-chain-control-tower/
 &nbsp;·&nbsp; presentation source: [supply-chain-control-tower](https://github.com/patoperez/supply-chain-control-tower)
 
 > **All data is 100% synthetic** — no real, proprietary, or confidential information
