@@ -96,4 +96,4 @@ data-pipeline/
 - Stock and service levels are sized from a textbook reorder-point policy (reorder
   point ≈ lead-time demand + safety stock).
 
-*Stack: Python · pandas · numpy. A Power BI view of the same data is planned.*
+*Stack: Python · pandas · numpy. A Power BI view of the same data is planned (not uploaded yet.*
